@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIdeo Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cover" id="cover">
+            <div class="c__play_btn"><i class="material-icons" style="font-size: 80px;" title="پخش">play_circle_outline</i></div>
+            <div class="c__title"></div>
+            <div class="c__mouse_menu">
+                <span class="resetSpeed">resetSpeed</span>
+                <span class="resetZoom">resetZoom</span>
+            </div>
+            <div class="toll_bar">
+                <div class="time_line">
+                    <div class="progress_timer now_time">00:00</div>
+                    <div class="progress_time" id="progress_time">
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <div class="progress_timer total_time">00:00</div>
+                </div>
+                <div class="player_controls">
+                    <div>
+                        <button class="player_btn skip_previous" title="قبلی"><i class="material-icons">skip_previous</i></button>
+                        <button class="player_btn skip_real" title="عقب"><i class="material-icons">replay_10</i></button>
+                        <button class="player_btn play_stop" title="پخش/مکث"><i class="material-icons">&#xe037</i></button>
+                        <button class="player_btn skip_front" title="جلو"><i class="material-icons">forward_10</i></button>
+                        <button class="player_btn skip_next" title="بعدی"><i class="material-icons">skip_next</i></button>
+                        <button class="player_btn" id="volume_off" title="صدا"><i class="material-icons">volume_up</i></button>
+                        <div class="progress_volume" id="progress_volume">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="player_btn">
+                            <i class="material-icons">high_quality</i>
+                            <ul>
+                                <li class="select_quality select_quality_1080p" data-url="3.mp4">1080p</li>
+                                <li class="select_quality select_quality_720p" data-url="2.mp4">720p</li>
+                                <li class="select_quality select_quality_480p" data-url="1.mp4">480p</li>
+                            </ul>
+                        </button>
+                        <button class="player_btn reverse" title="معکوس"><i class="material-icons">compare_arrows</i></button>
+                        <button class="player_btn playerMenu_btn" title="تنظیمات"><i class="material-icons">settings</i>
+                            <ul>
+                                <li class="speed_box"><span class="speed_plus">&#43;</span><span class="speed_title">speed</span><span class="speed_minus">&#8722;</span></li>
+                                <li class="zoom_box"><i class="material-icons zoom_in">zoom_in</i><span class="zoom_title">100%</span><i class="material-icons zoom_out">zoom_out</i></li>
+                            </ul>
+                        </button>
+                        <button class="player_btn playerMenu_btn" title="دانلود"><i class="material-icons">file_download</i>
+                            <ul>
+                                <li><a class="download_1080">1080p</a></li>
+                                <li><a class="download_720">720p</a></li>
+                                <li><a class="download_480">480p</a></li>
+                            </ul>
+                        </button>
+                        <button class="player_btn picture_in_picture" title="تصویر در تصویر"><i class="material-icons">picture_in_picture</i></button>
+                        <button class="player_btn repetition" title="تکرار مجدد"><i class="material-icons">autorenew</i></button>
+                        <button class="player_btn fullscreen" title="تمام صفحه"><i class="material-icons">fullscreen</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="c__list"></div>
+            <video  class="video" src=""></video>
+        </div>
+    </div>
+</body>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="js/script.js"></script>
+</html>
